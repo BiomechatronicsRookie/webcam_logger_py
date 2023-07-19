@@ -7,7 +7,7 @@ import os
 from utilitites import *
 
 subject_number = 3
-save_path = r"C:\Users\NakamaLab\Videos\\" #Save format file path included extension
+save_path = r"C:\Users\{0}\Videos\\".format(os.environ['USERNAME']) #Save format file path included extension
 
 
 class webcam(threading.Thread):
